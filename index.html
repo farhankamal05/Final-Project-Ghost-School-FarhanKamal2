@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>GHOST SCHOOLS FINALE PROJECT</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="images/favicon.png" rel="icon" type="image/png">
+</head>
+<body>
+  <div class="HeaderMain">
+    <h1>Thomas A. Edison HS.</h1>
+    <h3>Web Development Class</h3>
+    <h4>Ghost Schools Finale Project</h4>
+    <h5>Farhan Kamal</h5>
+    <h6>1/17/2024</h6>
+    <img class="HeadingImage" src="images/SadMe.png" alt="Its me">
+  </div>
+  <div class="MainText">
+    <h1>SPOT THE DIFFERENCES</h1>
+  </div>
+	<div class="container">
+		<div class="wave" id="l1">
+			<h1>Instructions</h1>
+      <br>
+     <ol class="InstructLIST">
+       <li>Hover over a level you want to play</li>
+       <li>You have 2 sections in the level the before and after go and hover over the before black box and a image should appear you shall keep your mouse on the image for a certain amount of seconds that is instructed for that level</li>
+       <li>Once you have hovered for the instructred amount of time move your mose away from image and it should revert back to a black box</li>
+       <li>Now go to the After section and repeat what you done for step 2 and 3 but instead for the after section you shall spot for 3 differences ONLY (For level 1 this is different as there is 4 differences and not just 3 but it's only for level 1)</li>
+       <li>Once you had found 3 (or 4 if you are on level 1) differences you had succesfuly passed the level</li>
+     </ol>
+		</div>
+		<div class="wave" id="easy">
+			<h1>LEVEL #1</h1>
+    <h3>EASY</h3>
+      <br>
+      <h2>BEFORE</h2>
+      <p>Hover over the image for 10 seconds</p>
+      <img id="demo" src="images/BLACK.jpg" width='600' height='400'
+        onmouseover="this.src='images/MAINGAME/Before/BE.jpg'"
+        onmouseout="this.src='images/BLACK.jpg';">
+    <br>
+      <br>
+      <h2>AFTER</h2>
+      <img id="demo" src="images/BLACK.jpg" width='600' height='400'
+        onmouseover="this.src='images/MAINGAME/After/AE.jpg'"
+        onmouseout="this.src='images/BLACK.jpg';">
+			</div>
+		<div class="wave" id="medium">
+        <h1>LEVEL #2</h1>
+      <h3>MEDIUM</h3>
+        <br>
+        <h2>BEFORE</h2>
+      <p>Hover over the image for 5 seconds</p>
+      <img id="demo" src="images/BLACK.jpg" width='600' height='400'
+        onmouseover="this.src='images/MAINGAME/Before/BM.jpg'"
+        onmouseout="this.src='images/BLACK.jpg';">
+      <br>
+      <br>
+        <h2>AFTER</h2>
+      <img id="demo" src="images/BLACK.jpg" width='600' height='400'
+        onmouseover="this.src='images/MAINGAME/After/AM.jpg'"
+        onmouseout="this.src='images/BLACK.jpg';">
+		</div>
+		<div class="wave" id="hard">
+        <h1>LEVEL #3</h1>
+      <h3>HARD</h3>
+        <br>
+        <h2>BEFORE</h2>
+      <p>Hover over the image for 3 seconds</p>
+      <img id="demo" src="images/BLACK.jpg" width='600' height='400'
+        onmouseover="this.src='images/MAINGAME/Before/BH.jpg'"
+        onmouseout="this.src='images/BLACK.jpg';">
+      <br>
+      <br>
+        <h2>AFTER</h2>
+      <img id="demo" src="images/BLACK.jpg" width='600' height='400'
+        onmouseover="this.src='images/MAINGAME/After/AH.jpg'"
+        onmouseout="this.src='images/BLACK.jpg';">
+		</div>
+    <div class="wave" id="Answer">
+        <h1>CORRECT LOCATIONS</h1>
+      <h3>Cant find them you can click here</h3>
+        <br>
+      <h2>WARNING THIS SHOULD BE THE LAST THING YOU SHOULD BE USE</h2>
+        <h2>LEVEL #1</h2>
+      <img id="demo" src="images/BLACK.jpg" width='600' height='400'
+        onmouseover="this.src='images/MAINGAME/Answer/ANSWEREASY.jpg'"
+        onmouseout="this.src='images/BLACK.jpg';">
+      <br>
+      <br>
+        <h2>LEVEL #2</h2>
+      <img id="demo" src="images/BLACK.jpg" width='600' height='400'
+        onmouseover="fade(this.src='images/MAINGAME/Answer/ANSWERMEDIUM.jpg', 0.4)"
+        onmouseout="this.src='images/BLACK.jpg';">
+      <br>
+      <br>
+        <h2>LEVEL #3</h2>
+      <img id="demo" src="images/BLACK.jpg" width='600' height='400'
+        onmouseover="this.src='images/MAINGAME/Answer/ANSWERHARD.jpg'"
+        onmouseout="this.src='images/BLACK.jpg';">
+    </div>
+	
+		</div>
+
+  <script>
+    function fade(obj, opacity) {
+      $(obj).stop().fadeTo('slow', opacity);
+    }
+  document.getElementById("demo").addEventListener("mouseover", mouseOver);
+  document.getElementById("demo").addEventListener("mouseout", mouseOut);
+
+  function mouseOver() {
+    document.getElementById("demo").style.transition = "all 2s";
+  }
+
+  function mouseOut() {
+    document.getElementById("demo").style.transition = "all 2s";
+  }
+  </script>
+
+</body>
+
+</html>
